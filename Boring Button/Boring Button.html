@@ -13,13 +13,33 @@
     <button id="clicker">Boring button</button>
     
     <script>
+    var clickcount = 0;
+        
     var clickerButton = document.getElementById("clicker");
 
     var onButtonClick = function() {
+        clickcount++
+        if(clickcount === 1) {
         clickerButton.textContent = "Boring-er button";
+        } else if(clickcount === 2) {
+        clickerButton.textContent = "Boring-er-er button";
+        } else if(clickcount === 3) {
+        clickerButton.textContent = "Boring-est button";
+        } else if(clickcount === 4) {
+        clickerButton.textContent = "Boring-est-er button";
+        } else if(clickcount === 5) {
+        clickerButton.textContent = "Boring-est-er-er button";
+        } else if(clickcount === 6) {
+        clickerButton.textContent = "Boring-est-est button";
+        } else if(clickcount === 7) {
+        clickerButton.textContent = "Boring-est-est-er button";
+        } else if(clickcount === 8) {
+        clickerButton.textContent = "Enough.";
+        }
     };
     
     clickerButton.addEventListener("click", onButtonClick);
+        
     </script>
     </body>
 </html>
