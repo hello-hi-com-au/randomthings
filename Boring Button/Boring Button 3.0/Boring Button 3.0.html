@@ -19,14 +19,13 @@
       
     var clickerButton = document.getElementById("clicker");
       
-    var onButtonClick = function() {
-    if(ercount === "-er-er") {
+    if(ercount === "-er-er-er") 
     ercount = "";
     estcount = estcount + estadd;
-    } else {
+        
+    var onButtonClick = function() {
         ercount += eradd
         clickerButton.textContent = "Boring" + estcount + ercount + " button";
-    }
     }
     
     clickerButton.addEventListener("click", onButtonClick);
