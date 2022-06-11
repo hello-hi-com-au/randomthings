@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Boring Button 2.0</title>
+    </head>
+    <body>
+    
+    <h1>Boring webpage</h1>
+    
+    <button id="clicker">Boring button</button>
+    
+    <script>
+    var eradd = "-er";
+    var ercount = "";
+      
+    var estadd = "-est";
+    var estcount = "";
+      
+    var clickerButton = document.getElementById("clicker");
+
+    var onButtonClick = function() {
+        ercount += eradd;
+        clickerButton.textContent = "Boring" + ercount + " button";
+        if(ercount = "-er-er") {
+        estcount += estadd;
+        ercount = ""
+        }
+    }
+    
+    clickerButton.addEventListener("click", onButtonClick);
+        
+    </script>
+    </body>
+</html>
