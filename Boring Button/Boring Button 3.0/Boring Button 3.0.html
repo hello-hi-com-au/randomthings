@@ -13,19 +13,24 @@
     <script>
     var eradd = "-er";
     var ercount = "";
+    var erresponse = 0;
       
     var estadd = "-est";
     var estcount = "";
       
     var clickerButton = document.getElementById("clicker");
-      
-    if(ercount === "-er-er-er") 
-    ercount = "";
-    estcount = estcount + estadd;
         
     var onButtonClick = function() {
+        if() {
+        if(ercount === "-er-er") 
+        ercount = "";
+        estcount = estcount + estadd;
+        erresponse = 2;
+        } else if() {
         ercount += eradd
         clickerButton.textContent = "Boring" + estcount + ercount + " button";
+        erresponse = 1;
+        }
     }
     
     clickerButton.addEventListener("click", onButtonClick);
