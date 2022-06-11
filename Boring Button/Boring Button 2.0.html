@@ -14,7 +14,7 @@
     
     <script>
     var eradd = "-er";
-    var ercount = "-er";
+    var ercount = "";
       
     var estadd = "-est";
     var estcount = "-est";
@@ -22,9 +22,6 @@
     var clickerButton = document.getElementById("clicker");
 
     var onButtonClick = function() {
-        if(ercount = "-er") {
-        clickerButton.textContent = "Boring button";
-        } else
         ercount += eradd
         clickerButton.textContent = "Boring" + ercount + " button";
     }
