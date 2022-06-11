@@ -22,8 +22,11 @@
     var clickerButton = document.getElementById("clicker");
 
     var onButtonClick = function() {
+        if(ercount = "-er") {
+        clickerButton.textContent = "Boring button";
+        } else
         ercount += eradd
-        clickerButton.textContent = "Boring" + ercount + "button";
+        clickerButton.textContent = "Boring" + ercount + " button";
     }
     
     clickerButton.addEventListener("click", onButtonClick);
