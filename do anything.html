@@ -1,3 +1,16 @@
 <!DOCTYPE html>
-<html onmousemove="window.close('','_blank','')">
+<html>
+<script>
+const openWindow = () => {
+const wind =  window.open('','_blank','');
+const actualClose = wind.close;
+const closePromise = new Promise(r=>{wind.close = ()=>{r(undefined);}});
+(async ()=>{
+await closePromise; // wait for promise resolution
+actualClose(); // closing the window here is legal
+})();
+return wind;
+}
+document.getElementById('myButton').addEventListener('click', wind.close)
+</script>
 </html>
