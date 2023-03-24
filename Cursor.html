@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html onclick="">
+<html onclick="if (parseInt(document.getElementById('money').innerText) != 0) {
+document.getElementById('money').innerText = parseInt(document.getElementById('money').innerText) + 1 + ' Dollars'
+} else {
+document.getElementById('money').innerText = '1 Dollar'
+}">
 <head>
 <title>Page Title</title>
 <style>
-body {
-
+::selection {
+color: black;
 }
 </style>
 </head>
 <body>
 
 <h2 id="money">0 Dollars</h2>
+
+<button></button>
 
 </body>
 </html>
