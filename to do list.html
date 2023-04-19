@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To-do list</title>
+<style>
+.checkbox {
+width:21px;
+height:21px;
+position:absolute;
+}
+button{
+position:absolute;
+}
+</style>
+</head>
+<body>
+<button style="bottom:10px;" onclick="localStorage.setItem('Save', document.body.innerHTML")">Save</button>
+<button style="bottom:10px; left:58px;" onclick="document.body.innerHTML = localStorage.getItem('Save')">Load</button>
+<input>
+<input class="checkbox" type="checkbox" style="top:5px;">
+<button onclick="yay()" style="left:214px;">Add Task</button>
+<script>
+var k = 1;
+function yay() {
+var i = document.createElement("input");
+var j = document.createElement("input");
+i.type = "checkbox";
+i.class = "checkbox";
+i.classList.add("checkbox");
+i.style.top = 29 * k + 2 + "px";
+j.style.position = "absolute";
+j.style.left = "8px";
+j.style.top = 29 * k + 5 + "px";
+document.body.appendChild(j);
+document.body.appendChild(i);
+k++;
+}
+</script>
+</body>
+</html>
