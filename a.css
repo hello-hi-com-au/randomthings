@@ -1,5 +1,7 @@
 @font-face {
   font-family: 'A', serif;
+  font-style: normal;
+  font-weight: 400;
   src: url(https://greensofa24.github.io/randomthings/A-Regular.woff) format('woff');
   unicode-range: U+41;
 }
